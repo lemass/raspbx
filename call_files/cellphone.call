@@ -1,0 +1,8 @@
+Channel: dongle/dongle0/18002572353
+MaxRetries: 1
+RetryTime: 20
+WaitTime: 30
+Context: outgoing-call
+Extension: 10
+Set: Target="+8618002572353"
+Priority: 1

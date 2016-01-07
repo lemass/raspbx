@@ -1,0 +1,8 @@
+Channel: SIP/211
+MaxRetries: 1
+RetryTime: 10
+WaitTime: 10
+Context: outgoing-call
+Extension: 10
+Set: Target="+8613882208316"
+Priority: 1
