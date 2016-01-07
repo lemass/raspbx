@@ -1,0 +1,39 @@
+
+[from-trunk-dongle]
+exten => sms,1,Verbose(Incoming SMS from ${CALLERID(num)} ${BASE64_DECODE(${SMS_BASE64})})
+exten => sms,n,System(echo "To: lemass@163.com\nSubject: Incoming SMS from ${CALLERID(num)}\n\n${STRFTIME(${EPOCH},,%Y-%m-%d %H:%M:%S)} - ${DONGLENAME} - ${CALLERID(num)}: " >> /tmp/sms.txt)
+exten => sms,n,Set(FILE(/tmp/sms.txt,,,a)=${BASE64_DECODE(${SMS_BASE64})})
+;exten => sms,n,System(sendmail -t < /tmp/sms.txt)
+exten => sms,n,Hangup()
+exten => _.,1,Set(CALLERID(name)=${CALLERID(num)})
+exten => _.,n,Goto(from-trunk,${EXTEN},1)
+
+[outgoing-call]
+exten => 10,1,Answer()
+exten => 10,n,Wait(1)
+exten => 10,n,Playback(good-morning)
+exten => 10,n,Wait(1)
+exten => 10,n,Playback(your&food-services&is)
+exten => 10,n,Wait(1)
+exten => 10,n,DongleSendSMS(dongle0,${Target},"感谢接听来电,给我打满分哦 ^_^ ${STRFTIME(${EPOCH},,%Y-%m-%d %H:%M:%S)}【Dsky】")
+exten => 10,n,SayDigits(911)
+exten => 10,n,Playback(goodbye)
+exten => 10,n,Hangup()
+exten => _.,n,Goto(from-trunk,${EXTEN},1)
+
+[auto-interact]
+exten => s,1,Answer
+exten => s,n,Wait(1)
+exten => s,n,Playback(info-about-last-call&telephone-number)
+exten => s,n,Background(to-call-this-number&press-1)
+exten => s,n,Goto(fin)
+exten => s,n,(2)Playback(from-unknown-caller)
+exten => s,n,Macro(hangupcall,)
+exten => s,n(fin),Noop(Waiting for input)
+exten => s,n,WaitExten(60,)
+exten => s,n,Playback(sorry-youre-having-problems&goodbye)
+
+exten => 1,1,SayDigits(000)
+
+exten => i,1,Playback(vm-goodbye)
+exten => i,n,Macro(hangupcall,)
