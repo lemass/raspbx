@@ -33,14 +33,13 @@ def report_hosts():
     ISOTIMEFORMAT = '%Y-%m-%d %X'
     localDate = time.strftime( ISOTIMEFORMAT, time.localtime() )
     data = {'hostSet':[{'name':'raspbx', 'ip':localIP, 'date':localDate},{'name':'duck', 'ip':'192.168.2.36', 'date':'2016-01-07 18:43:11'}],'totalCount': 2,'message':'none'}
-    sethosts = r.set('host',data)
-    gethosts = r.get('host')
-    return gethosts
+    #sethosts = r.set('host',data)
 
-result = report_hosts()
-result = str(result).replace('\'', '\"')
+report_hosts()
 
-res = json.loads(result)
+gethosts = str(r.get('host')).replace('\'', '\"')
+
+res = json.loads(gethosts)
 print res['hostSet'][0]
 print res['hostSet'][1]
 
