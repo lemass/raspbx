@@ -1,0 +1,12 @@
+
+Welcome to RasPBX - Asterisk for Raspberry Pi
+
+List of RasPBX specific commands:
+----------------------------------------------------------------------------- 
+raspbx-upgrade      Keep your system up to date with the latest add-ons and
+                    security fixes
+configure-timezone  Set timezone for both system and PHP
+install-dongle      Install GSM/3G calling capability with chan_dongle
+raspbx-backup       Backup your complete system to an image file
+
+/usr/sbin/asterisk -x 'dongle cmd dongle0 AT+CMGD=1,4'  删除所有短信
