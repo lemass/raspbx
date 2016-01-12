@@ -1,13 +1,8 @@
 #!/bin/bash
-#By Chenxin 20120717
 
-if [ -f /etc/init.d/functions ];then
-. /etc/init.d/functions;
-fi
+[ -f /etc/init.d/functions ] && . /etc/init.d/functions
+[ -f /lib/lsb/init-functions ] && . /lib/lsb/init-functions
 
-PATH=$PATH:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
-
-sync
 sync
 echo 1 > /proc/sys/vm/drop_caches 
 sleep 2;
