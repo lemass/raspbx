@@ -1,0 +1,2720 @@
+Traceback (most recent call last):
+  File "./run.py", line 50, in <module>
+    app.run(host='0.0.0.0', port=80,debug=True)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/flask/app.py", line 772, in run
+    run_simple(host, port, self, **options)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 675, in run_simple
+    s.bind((hostname, port))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 13] Permission denied
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 328-101-498
+103.7.30.71 - - [30/Jan/2016 15:36:42] "POST /?signature=b930cad851f6d1effc5229e79de7fbce053c8a9a&timestamp=1454139403&nonce=1327466374 HTTP/1.0" 200 -
+103.7.30.71 - - [30/Jan/2016 15:37:13] "POST /?signature=fd31d29058f4e439e0078d73b7ef971359cfc962&timestamp=1454139433&nonce=1740982697 HTTP/1.0" 200 -
+101.226.103.59 - - [30/Jan/2016 15:44:09] "POST / HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 217, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 340, in handle
+    self.handle_one_request()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 251, in handle_one_request
+    elif self.parse_request():
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 286, in parse_request
+    self.send_error(400, "Bad request syntax (%r)" % requestline)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 364, in send_error
+    self.log_error("code %d, message %s", code, message)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 273, in log_error
+    self.log('error', *args)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 279, in log
+    _log(type, '%s - - [%s] %s\n' % (self.address_string(),
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 267, in address_string
+    return self.environ['REMOTE_ADDR']
+AttributeError: 'WSGIRequestHandler' object has no attribute 'environ'
+141.212.122.209 - - [30/Jan/2016 23:34:32] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+111.67.73.186 - - [30/Jan/2016 23:57:05] "GET /eyeota_user_sync HTTP/1.1" 404 -
+95.213.177.122 - - [31/Jan/2016 03:21:04] "POST http://check.proxyradar.com/azenv.php?auth=145418166435&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+176.103.48.25 - - [31/Jan/2016 12:57:04] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+91.207.60.64 - - [31/Jan/2016 14:32:26] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+95.213.177.125 - - [31/Jan/2016 14:33:25] "POST http://check.proxyradar.com/azenv.php?auth=145422200561&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+198.20.69.74 - - [31/Jan/2016 15:00:53] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+198.20.69.74 - - [31/Jan/2016 15:00:54] "GET /robots.txt HTTP/1.1" 404 -
+198.20.69.74 - - [31/Jan/2016 15:00:54] "GET /sitemap.xml HTTP/1.1" 404 -
+185.25.151.159 - - [31/Jan/2016 15:54:42] "GET http://testp2.czar.bielawa.pl/testproxy.php HTTP/1.1" 404 -
+185.130.5.231 - - [31/Jan/2016 16:09:48] "GET /img/slider/ipstresseriphone.png HTTP/1.1" 404 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 217, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 340, in handle
+    self.handle_one_request()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 251, in handle_one_request
+    elif self.parse_request():
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 253, in parse_request
+    self.send_error(400, "Bad request version (%r)" % version)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 364, in send_error
+    self.log_error("code %d, message %s", code, message)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 273, in log_error
+    self.log('error', *args)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 279, in log
+    _log(type, '%s - - [%s] %s\n' % (self.address_string(),
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 267, in address_string
+    return self.environ['REMOTE_ADDR']
+AttributeError: 'WSGIRequestHandler' object has no attribute 'environ'
+141.212.122.81 - - [31/Jan/2016 18:49:30] "GET /x HTTP/1.1" 404 -
+95.213.177.125 - - [31/Jan/2016 18:57:40] "POST http://check.proxyradar.com/azenv.php?auth=145423785961&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+51.255.160.247 - - [31/Jan/2016 22:11:06] "GET / HTTP/1.0" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+51.255.160.247 - - [31/Jan/2016 22:11:06] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+95.213.177.123 - - [31/Jan/2016 23:14:46] "POST http://check.proxyradar.com/azenv.php?auth=145425328627&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+182.118.53.176 - - [01/Feb/2016 01:29:49] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+208.52.154.243 - - [01/Feb/2016 03:00:17] "GET /webadmin/scripts/setup.php HTTP/1.0" 404 -
+95.213.177.125 - - [01/Feb/2016 03:31:41] "POST http://check.proxyradar.com/azenv.php?auth=145426870139&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+104.238.223.126 - - [01/Feb/2016 06:39:25] "GET http://ip.cn/ HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+95.213.177.122 - - [01/Feb/2016 08:02:55] "POST http://check.proxyradar.com/azenv.php?auth=145428497571&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+217.147.86.109 - - [01/Feb/2016 11:44:51] "GET / HTTP/1.0" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+80.82.78.68 - - [01/Feb/2016 12:04:02] "GET / HTTP/1.0" 500 -
+Error on request:
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/werkzeug/serving.py", line 194, in run_wsgi
+    execute(self.server.app)
+  File "/data/virtualbase/lib/python2.7/site-packages/werkzeug/serving.py", line 185, in execute
+    write(data)
+  File "/data/virtualbase/lib/python2.7/site-packages/werkzeug/serving.py", line 166, in write
+    self.wfile.write(data)
+IOError: [Errno 104] Connection reset by peer
+95.213.177.122 - - [01/Feb/2016 12:33:11] "POST http://check.proxyradar.com/azenv.php?auth=145430119089&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+217.147.86.109 - - [01/Feb/2016 12:37:14] "GET / HTTP/1.0" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+2.50.170.106 - - [01/Feb/2016 15:32:01] "GET /1828374 HTTP/1.1" 404 -
+95.213.177.126 - - [01/Feb/2016 17:05:15] "POST http://check.proxyradar.com/azenv.php?auth=145431751535&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 217, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 340, in handle
+    self.handle_one_request()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 251, in handle_one_request
+    elif self.parse_request():
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 286, in parse_request
+    self.send_error(400, "Bad request syntax (%r)" % requestline)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 364, in send_error
+    self.log_error("code %d, message %s", code, message)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 273, in log_error
+    self.log('error', *args)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 279, in log
+    _log(type, '%s - - [%s] %s\n' % (self.address_string(),
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 267, in address_string
+    return self.environ['REMOTE_ADDR']
+AttributeError: 'WSGIRequestHandler' object has no attribute 'environ'
+95.213.177.125 - - [01/Feb/2016 21:20:27] "POST http://check.proxyradar.com/azenv.php?auth=145433282729&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+66.240.236.119 - - [01/Feb/2016 21:51:07] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+66.240.236.119 - - [01/Feb/2016 21:51:07] "GET /robots.txt HTTP/1.1" 404 -
+66.240.236.119 - - [01/Feb/2016 21:51:08] "GET /sitemap.xml HTTP/1.1" 404 -
+171.8.63.71 - - [02/Feb/2016 01:11:43] "GET /manager/html HTTP/1.1" 404 -
+95.213.177.123 - - [02/Feb/2016 01:46:35] "POST http://check.proxyradar.com/azenv.php?auth=145434879579&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+208.52.161.99 - - [02/Feb/2016 03:37:18] "GET /phpmyadmin/scripts/setup.php HTTP/1.0" 404 -
+95.213.177.125 - - [02/Feb/2016 06:20:21] "POST http://check.proxyradar.com/azenv.php?auth=145436522125&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+51.255.160.247 - - [02/Feb/2016 10:03:16] "GET / HTTP/1.0" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+51.255.160.247 - - [02/Feb/2016 10:03:16] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+95.213.177.125 - - [02/Feb/2016 10:52:05] "POST http://check.proxyradar.com/azenv.php?auth=145438152541&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+208.52.154.243 - - [02/Feb/2016 14:19:32] "GET /sqlmanager/scripts/setup.php HTTP/1.0" 404 -
+95.213.177.124 - - [02/Feb/2016 15:18:49] "POST http://check.proxyradar.com/azenv.php?auth=145439752991&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+141.212.122.177 - - [02/Feb/2016 17:42:17] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 217, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 340, in handle
+    self.handle_one_request()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 251, in handle_one_request
+    elif self.parse_request():
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 286, in parse_request
+    self.send_error(400, "Bad request syntax (%r)" % requestline)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 364, in send_error
+    self.log_error("code %d, message %s", code, message)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 273, in log_error
+    self.log('error', *args)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 279, in log
+    _log(type, '%s - - [%s] %s\n' % (self.address_string(),
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 267, in address_string
+    return self.environ['REMOTE_ADDR']
+AttributeError: 'WSGIRequestHandler' object has no attribute 'environ'
+95.213.177.125 - - [02/Feb/2016 19:45:33] "POST http://check.proxyradar.com/azenv.php?auth=145441353213&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+95.213.177.123 - - [02/Feb/2016 23:58:26] "POST http://check.proxyradar.com/azenv.php?auth=145442870637&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 217, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 340, in handle
+    self.handle_one_request()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 248, in handle_one_request
+    self.raw_requestline = self.rfile.readline()
+IOError: [Errno 104] Connection reset by peer
+95.213.177.124 - - [03/Feb/2016 04:32:06] "POST http://check.proxyradar.com/azenv.php?auth=145444512521&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+91.226.212.39 - - [03/Feb/2016 05:47:31] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+216.17.111.245 - - [03/Feb/2016 07:42:27] "GET /server-status HTTP/1.1" 404 -
+95.213.177.123 - - [03/Feb/2016 09:06:45] "POST http://check.proxyradar.com/azenv.php?auth=145446160419&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+95.213.177.124 - - [03/Feb/2016 13:48:46] "POST http://check.proxyradar.com/azenv.php?auth=145447852571&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+82.118.236.3 - - [03/Feb/2016 14:02:17] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+208.91.115.10 - - [03/Feb/2016 14:49:51] "HEAD / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+208.52.161.99 - - [03/Feb/2016 14:56:52] "GET /phpMyAdmin/scripts/setup.php HTTP/1.0" 404 -
+95.213.177.125 - - [03/Feb/2016 18:22:02] "POST http://check.proxyradar.com/azenv.php?auth=145449492171&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+51.255.160.247 - - [03/Feb/2016 22:01:36] "GET / HTTP/1.0" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+51.255.160.247 - - [03/Feb/2016 22:01:36] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+95.213.177.126 - - [03/Feb/2016 22:40:03] "POST http://check.proxyradar.com/azenv.php?auth=145451040391&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 217, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 340, in handle
+    self.handle_one_request()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 251, in handle_one_request
+    elif self.parse_request():
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 286, in parse_request
+    self.send_error(400, "Bad request syntax (%r)" % requestline)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 364, in send_error
+    self.log_error("code %d, message %s", code, message)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 273, in log_error
+    self.log('error', *args)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 279, in log
+    _log(type, '%s - - [%s] %s\n' % (self.address_string(),
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 267, in address_string
+    return self.environ['REMOTE_ADDR']
+AttributeError: 'WSGIRequestHandler' object has no attribute 'environ'
+91.196.50.33 - - [04/Feb/2016 00:59:55] "GET http://testp4.pospr.waw.pl/testproxy.php HTTP/1.1" 404 -
+95.213.177.123 - - [04/Feb/2016 03:05:39] "POST http://check.proxyradar.com/azenv.php?auth=145452633945&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+185.25.151.159 - - [04/Feb/2016 08:43:57] "GET http://testp5.mielno.lubin.pl/testproxy.php HTTP/1.1" 404 -
+95.213.177.123 - - [04/Feb/2016 08:44:35] "POST http://check.proxyradar.com/azenv.php?auth=145454667465&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+89.248.174.4 - - [04/Feb/2016 12:25:50] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+95.213.177.126 - - [04/Feb/2016 15:02:46] "POST http://check.proxyradar.com/azenv.php?auth=145456936687&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+54.67.38.74 - - [04/Feb/2016 15:26:16] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+91.207.60.66 - - [04/Feb/2016 16:00:39] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+83.166.234.6 - - [04/Feb/2016 18:23:53] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+91.214.201.107 - - [04/Feb/2016 18:50:13] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 217, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 340, in handle
+    self.handle_one_request()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 251, in handle_one_request
+    elif self.parse_request():
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 253, in parse_request
+    self.send_error(400, "Bad request version (%r)" % version)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 364, in send_error
+    self.log_error("code %d, message %s", code, message)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 273, in log_error
+    self.log('error', *args)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 279, in log
+    _log(type, '%s - - [%s] %s\n' % (self.address_string(),
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 267, in address_string
+    return self.environ['REMOTE_ADDR']
+AttributeError: 'WSGIRequestHandler' object has no attribute 'environ'
+95.213.177.125 - - [04/Feb/2016 21:16:58] "POST http://check.proxyradar.com/azenv.php?auth=145459181879&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+37.187.114.171 - - [04/Feb/2016 22:50:32] "HEAD /irj/portal HTTP/1.0" 404 -
+82.118.236.28 - - [04/Feb/2016 23:15:08] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+95.213.177.125 - - [05/Feb/2016 03:52:51] "POST http://check.proxyradar.com/azenv.php?auth=145461557149&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+54.166.165.82 - - [05/Feb/2016 09:16:55] "HEAD / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+95.213.177.122 - - [05/Feb/2016 09:50:44] "POST http://check.proxyradar.com/azenv.php?auth=145463704439&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+54.251.144.191 - - [05/Feb/2016 15:23:36] "GET / HTTP/1.0" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+83.166.234.6 - - [05/Feb/2016 16:09:17] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+95.213.177.126 - - [05/Feb/2016 16:11:10] "POST http://check.proxyradar.com/azenv.php?auth=145465987097&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+128.232.110.29 - - [05/Feb/2016 19:09:15] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 217, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 340, in handle
+    self.handle_one_request()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 251, in handle_one_request
+    elif self.parse_request():
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 286, in parse_request
+    self.send_error(400, "Bad request syntax (%r)" % requestline)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 364, in send_error
+    self.log_error("code %d, message %s", code, message)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 273, in log_error
+    self.log('error', *args)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 279, in log
+    _log(type, '%s - - [%s] %s\n' % (self.address_string(),
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 267, in address_string
+    return self.environ['REMOTE_ADDR']
+AttributeError: 'WSGIRequestHandler' object has no attribute 'environ'
+189.219.1.0 - - [05/Feb/2016 21:07:17] "GET /tmUnblock.cgi HTTP/1.1" 404 -
+189.219.1.0 - - [05/Feb/2016 21:07:18] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+176.103.48.30 - - [05/Feb/2016 21:07:37] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+82.118.236.28 - - [05/Feb/2016 21:07:47] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+119.188.4.3 - - [05/Feb/2016 21:38:53] "GET /muieblackcat HTTP/1.1" 404 -
+119.188.4.3 - - [05/Feb/2016 21:38:53] "GET //phpMyAdmin/scripts/setup.php HTTP/1.1" 404 -
+119.188.4.3 - - [05/Feb/2016 21:38:53] "GET //phpmyadmin/scripts/setup.php HTTP/1.1" 404 -
+119.188.4.3 - - [05/Feb/2016 21:38:54] "GET //myadmin/scripts/setup.php HTTP/1.1" 404 -
+119.188.4.3 - - [05/Feb/2016 21:38:54] "GET //mysqladmin/scripts/setup.php HTTP/1.1" 404 -
+119.188.4.3 - - [05/Feb/2016 21:38:54] "GET //mysql/scripts/setup.php HTTP/1.1" 404 -
+119.188.4.3 - - [05/Feb/2016 21:38:55] "GET //websql/scripts/setup.php HTTP/1.1" 404 -
+119.188.4.3 - - [05/Feb/2016 21:38:55] "GET //web/scripts/setup.php HTTP/1.1" 404 -
+95.213.177.123 - - [05/Feb/2016 22:35:09] "POST http://check.proxyradar.com/azenv.php?auth=145468290973&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+193.109.69.251 - - [05/Feb/2016 23:54:34] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+218.207.242.21 - - [06/Feb/2016 01:07:50] "GET / HTTP/1.0" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+218.207.242.21 - - [06/Feb/2016 01:07:50] "OPTIONS / HTTP/1.0" 200 -
+218.207.242.21 - - [06/Feb/2016 01:08:43] "OPTIONS / HTTP/1.1" 200 -
+218.207.242.21 - - [06/Feb/2016 01:08:43] "GET /.git/HEAD HTTP/1.1" 404 -
+218.207.242.21 - - [06/Feb/2016 01:08:43] "GET /nmaplowercheck1454692191 HTTP/1.1" 404 -
+218.207.242.21 - - [06/Feb/2016 01:08:43] "GET /robots.txt HTTP/1.1" 404 -
+218.207.242.21 - - [06/Feb/2016 01:08:43] "POST /scripts/WPnBr.dll HTTP/1.1" 404 -
+218.207.242.21 - - [06/Feb/2016 01:08:43] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+218.207.242.21 - - [06/Feb/2016 01:08:43] "POST /scripts/WPnBr.dll HTTP/1.1" 404 -
+218.207.242.21 - - [06/Feb/2016 01:08:43] "GET /?=PHPE9568F36-D428-11d2-A769-00AA001ACF42 HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+218.207.242.21 - - [06/Feb/2016 01:08:43] "GET /stats HTTP/1.1" 404 -
+218.207.242.21 - - [06/Feb/2016 01:08:43] "GET /robots HTTP/1.1" 404 -
+218.207.242.21 - - [06/Feb/2016 01:08:48] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+218.207.242.21 - - [06/Feb/2016 01:08:48] "TRACE / HTTP/1.1" 405 -
+218.207.242.21 - - [06/Feb/2016 01:08:48] "OPTIONS / HTTP/1.1" 200 -
+218.207.242.21 - - [06/Feb/2016 01:08:48] "GET /pools/default/buckets HTTP/1.1" 404 -
+218.207.242.21 - - [06/Feb/2016 01:08:48] "GET /cacti/ HTTP/1.1" 404 -
+218.207.242.21 - - [06/Feb/2016 01:08:48] "GET /index HTTP/1.1" 404 -
+218.207.242.21 - - [06/Feb/2016 01:08:48] "GET /jmx-console/ HTTP/1.1" 404 -
+218.207.242.21 - - [06/Feb/2016 01:08:48] "GET /img/cake.icon.png HTTP/1.1" 404 -
+218.207.242.21 - - [06/Feb/2016 01:08:48] "GET /?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000 HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+218.207.242.21 - - [06/Feb/2016 01:08:48] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 217, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 340, in handle
+    self.handle_one_request()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 251, in handle_one_request
+    elif self.parse_request():
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 253, in parse_request
+    self.send_error(400, "Bad request version (%r)" % version)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 364, in send_error
+    self.log_error("code %d, message %s", code, message)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 273, in log_error
+    self.log('error', *args)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 279, in log
+    _log(type, '%s - - [%s] %s\n' % (self.address_string(),
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 267, in address_string
+    return self.environ['REMOTE_ADDR']
+AttributeError: 'WSGIRequestHandler' object has no attribute 'environ'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 217, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 340, in handle
+    self.handle_one_request()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 251, in handle_one_request
+    elif self.parse_request():
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 286, in parse_request
+    self.send_error(400, "Bad request syntax (%r)" % requestline)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 364, in send_error
+    self.log_error("code %d, message %s", code, message)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 273, in log_error
+    self.log('error', *args)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 279, in log
+    _log(type, '%s - - [%s] %s\n' % (self.address_string(),
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 267, in address_string
+    return self.environ['REMOTE_ADDR']
+AttributeError: 'WSGIRequestHandler' object has no attribute 'environ'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 217, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 340, in handle
+    self.handle_one_request()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 251, in handle_one_request
+    elif self.parse_request():
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 281, in parse_request
+    "Bad HTTP/0.9 request type (%r)" % command)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 364, in send_error
+    self.log_error("code %d, message %s", code, message)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 273, in log_error
+    self.log('error', *args)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 279, in log
+    _log(type, '%s - - [%s] %s\n' % (self.address_string(),
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 267, in address_string
+    return self.environ['REMOTE_ADDR']
+AttributeError: 'WSGIRequestHandler' object has no attribute 'environ'
+218.207.242.21 - - [06/Feb/2016 01:08:48] "GET /img/cake.icon.gif HTTP/1.1" 404 -
+218.207.242.21 - - [06/Feb/2016 01:08:48] "OPTIONS / HTTP/1.1" 200 -
+218.207.242.21 - - [06/Feb/2016 01:08:48] "GET /pools HTTP/1.1" 404 -
+218.207.242.21 - - [06/Feb/2016 01:08:48] "GET /home HTTP/1.1" 404 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 217, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 340, in handle
+    self.handle_one_request()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 251, in handle_one_request
+    elif self.parse_request():
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 286, in parse_request
+    self.send_error(400, "Bad request syntax (%r)" % requestline)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 364, in send_error
+    self.log_error("code %d, message %s", code, message)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 273, in log_error
+    self.log('error', *args)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 279, in log
+    _log(type, '%s - - [%s] %s\n' % (self.address_string(),
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 267, in address_string
+    return self.environ['REMOTE_ADDR']
+AttributeError: 'WSGIRequestHandler' object has no attribute 'environ'
+218.207.242.21 - - [06/Feb/2016 01:08:48] "GET /css/cake.generic.css HTTP/1.1" 404 -
+218.207.242.21 - - [06/Feb/2016 01:08:48] "OPTIONS / HTTP/1.1" 200 -
+218.207.242.21 - - [06/Feb/2016 01:08:48] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+218.207.242.21 - - [06/Feb/2016 01:08:49] "GET /nmaplowercheck1454692197 HTTP/1.1" 404 -
+218.207.242.21 - - [06/Feb/2016 01:08:49] "GET /blog HTTP/1.1" 404 -
+218.207.242.21 - - [06/Feb/2016 01:08:49] "HEAD / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+218.207.242.21 - - [06/Feb/2016 01:08:49] "OPTIONS / HTTP/1.1" 200 -
+218.207.242.21 - - [06/Feb/2016 01:08:49] "OPTIONS / HTTP/1.1" 200 -
+218.207.242.21 - - [06/Feb/2016 01:08:49] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+218.207.242.21 - - [06/Feb/2016 01:08:49] "OPTIONS / HTTP/1.1" 200 -
+218.207.242.21 - - [06/Feb/2016 01:08:49] "OPTIONS / HTTP/1.1" 200 -
+218.207.242.21 - - [06/Feb/2016 01:08:49] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+218.207.242.21 - - [06/Feb/2016 01:08:50] "OPTIONS / HTTP/1.1" 200 -
+218.207.242.21 - - [06/Feb/2016 01:08:50] "GET /js/vendors.php HTTP/1.1" 404 -
+218.207.242.21 - - [06/Feb/2016 01:08:50] "OPTIONS / HTTP/1.1" 200 -
+218.207.242.21 - - [06/Feb/2016 01:08:50] "GET /favicon.ico HTTP/1.1" 404 -
+218.207.242.21 - - [06/Feb/2016 01:08:50] "GET /?__debugger__=yes&amp;cmd=resource&amp;f=jquery.js HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+218.207.242.21 - - [06/Feb/2016 01:08:51] "GET /?__debugger__=yes&amp;cmd=paste HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+218.207.242.21 - - [06/Feb/2016 01:08:56] "GET /?__debugger__=yes&amp;cmd=resource&amp;f=style.css HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+218.207.242.21 - - [06/Feb/2016 01:08:57] "GET /?__debugger__=yes&amp;cmd=resource&amp;f=debugger.js HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+218.207.242.21 - - [06/Feb/2016 01:08:57] "GET /?__debugger__=yes&amp;cmd=resource&amp;f=console.png HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+71.6.135.131 - - [06/Feb/2016 03:55:02] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+71.6.135.131 - - [06/Feb/2016 03:55:03] "GET /robots.txt HTTP/1.1" 404 -
+71.6.135.131 - - [06/Feb/2016 03:55:03] "GET /sitemap.xml HTTP/1.1" 404 -
+71.6.135.131 - - [06/Feb/2016 03:55:09] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+71.6.135.131 - - [06/Feb/2016 03:55:10] "GET /robots.txt HTTP/1.1" 404 -
+71.6.135.131 - - [06/Feb/2016 03:55:10] "GET /sitemap.xml HTTP/1.1" 404 -
+71.6.135.131 - - [06/Feb/2016 03:55:17] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+71.6.135.131 - - [06/Feb/2016 03:55:18] "GET /robots.txt HTTP/1.1" 404 -
+71.6.135.131 - - [06/Feb/2016 03:55:18] "GET /sitemap.xml HTTP/1.1" 404 -
+71.6.135.131 - - [06/Feb/2016 03:55:34] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+71.6.135.131 - - [06/Feb/2016 03:55:34] "GET /robots.txt HTTP/1.1" 404 -
+71.6.135.131 - - [06/Feb/2016 03:55:35] "GET /sitemap.xml HTTP/1.1" 404 -
+95.213.177.123 - - [06/Feb/2016 05:05:23] "POST http://check.proxyradar.com/azenv.php?auth=145470632329&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+198.20.69.74 - - [06/Feb/2016 07:30:00] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+198.20.69.74 - - [06/Feb/2016 07:30:00] "GET /robots.txt HTTP/1.1" 404 -
+198.20.69.74 - - [06/Feb/2016 07:30:01] "GET /sitemap.xml HTTP/1.1" 404 -
+208.52.154.240 - - [06/Feb/2016 11:12:03] "GET /phpmyadmin/scripts/setup.php HTTP/1.0" 404 -
+95.213.177.122 - - [06/Feb/2016 11:13:05] "POST http://check.proxyradar.com/azenv.php?auth=145472838573&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+83.166.235.5 - - [06/Feb/2016 12:06:39] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+91.207.60.64 - - [06/Feb/2016 12:33:00] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+82.118.236.28 - - [06/Feb/2016 16:41:46] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+95.213.177.124 - - [06/Feb/2016 17:30:57] "POST http://check.proxyradar.com/azenv.php?auth=145475105749&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+185.25.151.159 - - [06/Feb/2016 18:59:32] "GET http://testp2.czar.bielawa.pl/testproxy.php HTTP/1.1" 404 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 217, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 340, in handle
+    self.handle_one_request()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 251, in handle_one_request
+    elif self.parse_request():
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 286, in parse_request
+    self.send_error(400, "Bad request syntax (%r)" % requestline)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 364, in send_error
+    self.log_error("code %d, message %s", code, message)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 273, in log_error
+    self.log('error', *args)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 279, in log
+    _log(type, '%s - - [%s] %s\n' % (self.address_string(),
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 267, in address_string
+    return self.environ['REMOTE_ADDR']
+AttributeError: 'WSGIRequestHandler' object has no attribute 'environ'
+95.213.177.122 - - [06/Feb/2016 23:57:50] "POST http://check.proxyradar.com/azenv.php?auth=145477427069&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+95.213.177.124 - - [07/Feb/2016 06:17:15] "POST http://check.proxyradar.com/azenv.php?auth=145479703593&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+23.252.163.19 - - [07/Feb/2016 08:17:17] "GET /web-console/ServerInfo.jsp HTTP/1.1" 404 -
+23.252.163.19 - - [07/Feb/2016 08:18:17] "GET /jmx-console/HtmlAdaptor?action=inspectMBean&name=jboss.system:type=ServerInfo HTTP/1.1" 404 -
+23.252.163.19 - - [07/Feb/2016 08:19:12] "GET /invoker/JMXInvokerServlet HTTP/1.1" 404 -
+95.213.177.122 - - [07/Feb/2016 12:06:59] "POST http://check.proxyradar.com/azenv.php?auth=145481801947&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+176.103.48.30 - - [07/Feb/2016 14:58:51] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+141.212.122.81 - - [07/Feb/2016 17:29:20] "GET /x HTTP/1.1" 404 -
+208.52.154.240 - - [07/Feb/2016 17:55:40] "GET /pma/scripts/setup.php HTTP/1.0" 404 -
+95.213.177.126 - - [07/Feb/2016 18:16:29] "POST http://check.proxyradar.com/azenv.php?auth=145484018945&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+40.76.9.28 - - [07/Feb/2016 19:54:09] "GET /w00tw00t.at.blackhats.romanian.anti-sec:) HTTP/1.1" 404 -
+40.76.9.28 - - [07/Feb/2016 19:54:10] "GET /phpMyAdmin/scripts/setup.php HTTP/1.1" 404 -
+40.76.9.28 - - [07/Feb/2016 19:54:10] "GET /phpmyadmin/scripts/setup.php HTTP/1.1" 404 -
+40.76.9.28 - - [07/Feb/2016 19:54:11] "GET /pma/scripts/setup.php HTTP/1.1" 404 -
+40.76.9.28 - - [07/Feb/2016 19:54:11] "GET /myadmin/scripts/setup.php HTTP/1.1" 404 -
+40.76.9.28 - - [07/Feb/2016 19:54:12] "GET /MyAdmin/scripts/setup.php HTTP/1.1" 404 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 217, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 340, in handle
+    self.handle_one_request()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 251, in handle_one_request
+    elif self.parse_request():
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 281, in parse_request
+    "Bad HTTP/0.9 request type (%r)" % command)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 364, in send_error
+    self.log_error("code %d, message %s", code, message)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 273, in log_error
+    self.log('error', *args)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 279, in log
+    _log(type, '%s - - [%s] %s\n' % (self.address_string(),
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 267, in address_string
+    return self.environ['REMOTE_ADDR']
+AttributeError: 'WSGIRequestHandler' object has no attribute 'environ'
+185.49.14.190 - - [08/Feb/2016 00:22:27] "GET http://testp4.pospr.waw.pl/testproxy.php HTTP/1.1" 404 -
+95.213.177.122 - - [08/Feb/2016 00:32:49] "POST http://check.proxyradar.com/azenv.php?auth=145486276985&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+83.166.234.6 - - [08/Feb/2016 04:00:50] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+193.169.86.17 - - [08/Feb/2016 06:38:26] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+95.213.177.122 - - [08/Feb/2016 06:59:34] "POST http://check.proxyradar.com/azenv.php?auth=145488597419&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+176.103.48.25 - - [08/Feb/2016 12:56:12] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+95.213.177.126 - - [08/Feb/2016 13:26:49] "POST http://check.proxyradar.com/azenv.php?auth=145490920961&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 217, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 340, in handle
+    self.handle_one_request()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 251, in handle_one_request
+    elif self.parse_request():
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 286, in parse_request
+    self.send_error(400, "Bad request syntax (%r)" % requestline)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 364, in send_error
+    self.log_error("code %d, message %s", code, message)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 273, in log_error
+    self.log('error', *args)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 279, in log
+    _log(type, '%s - - [%s] %s\n' % (self.address_string(),
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 267, in address_string
+    return self.environ['REMOTE_ADDR']
+AttributeError: 'WSGIRequestHandler' object has no attribute 'environ'
+95.213.177.122 - - [08/Feb/2016 19:18:51] "POST http://check.proxyradar.com/azenv.php?auth=145493033035&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+201.173.141.154 - - [08/Feb/2016 23:48:45] "GET / HTTP/1.0" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+88.150.206.217 - - [08/Feb/2016 23:59:45] "GET /CFIDE/administrator/ HTTP/1.1" 404 -
+40.117.100.57 - - [09/Feb/2016 01:30:42] "GET /w00tw00t.at.blackhats.romanian.anti-sec:) HTTP/1.1" 404 -
+40.117.100.57 - - [09/Feb/2016 01:30:43] "GET /phpMyAdmin/scripts/setup.php HTTP/1.1" 404 -
+40.117.100.57 - - [09/Feb/2016 01:30:43] "GET /phpmyadmin/scripts/setup.php HTTP/1.1" 404 -
+40.117.100.57 - - [09/Feb/2016 01:30:44] "GET /pma/scripts/setup.php HTTP/1.1" 404 -
+40.117.100.57 - - [09/Feb/2016 01:30:45] "GET /myadmin/scripts/setup.php HTTP/1.1" 404 -
+40.117.100.57 - - [09/Feb/2016 01:30:45] "GET /MyAdmin/scripts/setup.php HTTP/1.1" 404 -
+95.213.177.123 - - [09/Feb/2016 01:36:25] "POST http://check.proxyradar.com/azenv.php?auth=145495298505&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+95.213.177.124 - - [09/Feb/2016 07:45:37] "POST http://check.proxyradar.com/azenv.php?auth=145497513797&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+83.166.235.5 - - [09/Feb/2016 09:36:05] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+185.25.151.159 - - [09/Feb/2016 09:54:56] "GET http://testp5.mielno.lubin.pl/testproxy.php HTTP/1.1" 404 -
+125.88.181.41 - - [09/Feb/2016 11:05:23] "GET /manager/html HTTP/1.1" 404 -
+95.213.177.125 - - [09/Feb/2016 13:59:02] "POST http://check.proxyradar.com/azenv.php?auth=145499754223&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+91.207.60.66 - - [09/Feb/2016 15:55:22] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+176.103.48.30 - - [09/Feb/2016 16:30:21] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+54.80.63.234 - - [09/Feb/2016 17:02:13] "HEAD / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+128.232.110.28 - - [09/Feb/2016 19:59:53] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+95.213.177.124 - - [09/Feb/2016 20:09:42] "POST http://check.proxyradar.com/azenv.php?auth=145501978151&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 217, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 340, in handle
+    self.handle_one_request()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 251, in handle_one_request
+    elif self.parse_request():
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 286, in parse_request
+    self.send_error(400, "Bad request syntax (%r)" % requestline)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 364, in send_error
+    self.log_error("code %d, message %s", code, message)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 273, in log_error
+    self.log('error', *args)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 279, in log
+    _log(type, '%s - - [%s] %s\n' % (self.address_string(),
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 267, in address_string
+    return self.environ['REMOTE_ADDR']
+AttributeError: 'WSGIRequestHandler' object has no attribute 'environ'
+141.212.122.177 - - [09/Feb/2016 23:46:29] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+193.169.86.17 - - [10/Feb/2016 00:52:48] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+95.213.177.124 - - [10/Feb/2016 02:19:38] "POST http://check.proxyradar.com/azenv.php?auth=145504197843&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+189.194.46.30 - - [10/Feb/2016 02:57:37] "GET / HTTP/1.0" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+155.94.254.143 - - [10/Feb/2016 03:50:16] "GET /server-status HTTP/1.1" 404 -
+95.213.177.122 - - [10/Feb/2016 08:38:13] "POST http://check.proxyradar.com/azenv.php?auth=145506469347&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+82.118.237.114 - - [10/Feb/2016 09:19:38] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+83.166.235.5 - - [10/Feb/2016 10:45:52] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+95.213.177.123 - - [10/Feb/2016 14:32:26] "POST http://check.proxyradar.com/azenv.php?auth=145508594671&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+119.188.4.3 - - [10/Feb/2016 16:41:40] "GET /muieblackcat HTTP/1.1" 404 -
+119.188.4.3 - - [10/Feb/2016 16:41:40] "GET //phpMyAdmin/scripts/setup.php HTTP/1.1" 404 -
+119.188.4.3 - - [10/Feb/2016 16:41:40] "GET //phpmyadmin/scripts/setup.php HTTP/1.1" 404 -
+119.188.4.3 - - [10/Feb/2016 16:41:41] "GET //myadmin/scripts/setup.php HTTP/1.1" 404 -
+119.188.4.3 - - [10/Feb/2016 16:41:41] "GET //mysqladmin/scripts/setup.php HTTP/1.1" 404 -
+119.188.4.3 - - [10/Feb/2016 16:41:41] "GET //mysql/scripts/setup.php HTTP/1.1" 404 -
+119.188.4.3 - - [10/Feb/2016 16:41:42] "GET //websql/scripts/setup.php HTTP/1.1" 404 -
+119.188.4.3 - - [10/Feb/2016 16:41:42] "GET //web/scripts/setup.php HTTP/1.1" 404 -
+110.174.30.185 - - [10/Feb/2016 16:47:09] "GET /raspbx-17-10-2015.zip HTTP/1.1" 404 -
+110.174.30.185 - - [10/Feb/2016 16:47:10] "GET /raspbx-17-10-2015.zip HTTP/1.1" 404 -
+110.174.30.185 - - [10/Feb/2016 16:47:12] "GET /raspbx-17-10-2015.zip HTTP/1.1" 404 -
+150.70.173.58 - - [10/Feb/2016 16:48:12] "GET /raspbx-17-10-2015.zip HTTP/1.1" 404 -
+95.213.177.126 - - [10/Feb/2016 19:21:08] "POST http://check.proxyradar.com/azenv.php?auth=145510326805&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 217, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 340, in handle
+    self.handle_one_request()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 251, in handle_one_request
+    elif self.parse_request():
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 286, in parse_request
+    self.send_error(400, "Bad request syntax (%r)" % requestline)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 364, in send_error
+    self.log_error("code %d, message %s", code, message)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 273, in log_error
+    self.log('error', *args)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 279, in log
+    _log(type, '%s - - [%s] %s\n' % (self.address_string(),
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 267, in address_string
+    return self.environ['REMOTE_ADDR']
+AttributeError: 'WSGIRequestHandler' object has no attribute 'environ'
+201.172.17.225 - - [10/Feb/2016 23:13:22] "GET / HTTP/1.0" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+95.213.177.124 - - [11/Feb/2016 00:07:37] "POST http://check.proxyradar.com/azenv.php?auth=145512045705&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+185.25.148.240 - - [11/Feb/2016 03:41:57] "GET http://testp2.czar.bielawa.pl/testproxy.php HTTP/1.1" 404 -
+95.213.177.125 - - [11/Feb/2016 04:48:14] "POST http://check.proxyradar.com/azenv.php?auth=145513729353&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+95.213.177.125 - - [11/Feb/2016 09:39:30] "POST http://check.proxyradar.com/azenv.php?auth=145515476969&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+80.82.64.68 - - [11/Feb/2016 11:55:01] "GET /index.php HTTP/1.0" 404 -
+95.213.177.123 - - [11/Feb/2016 14:27:30] "POST http://check.proxyradar.com/azenv.php?auth=145517205019&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+54.159.78.53 - - [11/Feb/2016 17:24:58] "HEAD / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+95.213.177.125 - - [11/Feb/2016 19:16:44] "POST http://check.proxyradar.com/azenv.php?auth=145518940465&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 217, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 340, in handle
+    self.handle_one_request()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 251, in handle_one_request
+    elif self.parse_request():
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 253, in parse_request
+    self.send_error(400, "Bad request version (%r)" % version)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 364, in send_error
+    self.log_error("code %d, message %s", code, message)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 273, in log_error
+    self.log('error', *args)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 279, in log
+    _log(type, '%s - - [%s] %s\n' % (self.address_string(),
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 267, in address_string
+    return self.environ['REMOTE_ADDR']
+AttributeError: 'WSGIRequestHandler' object has no attribute 'environ'
+82.118.236.26 - - [11/Feb/2016 19:57:57] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+202.109.143.18 - - [11/Feb/2016 22:01:57] "GET /manager/html HTTP/1.1" 404 -
+177.236.1.163 - - [11/Feb/2016 22:07:35] "GET / HTTP/1.0" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+95.213.177.125 - - [12/Feb/2016 00:03:01] "POST http://check.proxyradar.com/azenv.php?auth=145520658125&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+176.103.48.30 - - [12/Feb/2016 04:34:49] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+95.213.177.122 - - [12/Feb/2016 04:50:46] "POST http://check.proxyradar.com/azenv.php?auth=145522384631&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+80.82.64.68 - - [12/Feb/2016 06:02:49] "GET http://iwannaknow.tk/index.php HTTP/1.0" 404 -
+95.213.177.126 - - [12/Feb/2016 09:38:58] "POST http://check.proxyradar.com/azenv.php?auth=145524113713&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+200.223.24.132 - - [12/Feb/2016 12:00:54] "HEAD http://54.169.181.13:80/mysql/admin/ HTTP/1.1" 404 -
+95.213.177.126 - - [12/Feb/2016 14:30:51] "POST http://check.proxyradar.com/azenv.php?auth=145525865165&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+141.212.122.177 - - [12/Feb/2016 16:45:28] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 217, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 340, in handle
+    self.handle_one_request()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 251, in handle_one_request
+    elif self.parse_request():
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 281, in parse_request
+    "Bad HTTP/0.9 request type (%r)" % command)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 364, in send_error
+    self.log_error("code %d, message %s", code, message)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 273, in log_error
+    self.log('error', *args)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 279, in log
+    _log(type, '%s - - [%s] %s\n' % (self.address_string(),
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 267, in address_string
+    return self.environ['REMOTE_ADDR']
+AttributeError: 'WSGIRequestHandler' object has no attribute 'environ'
+95.213.177.125 - - [12/Feb/2016 19:15:21] "POST http://check.proxyradar.com/azenv.php?auth=145527572059&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+91.214.201.107 - - [12/Feb/2016 20:27:49] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+94.185.83.100 - - [12/Feb/2016 21:05:03] "GET http://testp5.mielno.lubin.pl/testproxy.php HTTP/1.1" 404 -
+95.213.177.122 - - [13/Feb/2016 00:07:30] "POST http://check.proxyradar.com/azenv.php?auth=145529325049&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+54.196.97.44 - - [13/Feb/2016 03:24:02] "HEAD / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+95.213.177.123 - - [13/Feb/2016 05:02:18] "POST http://check.proxyradar.com/azenv.php?auth=145531093837&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+192.99.144.140 - - [13/Feb/2016 06:57:41] "PROPFIND /webdav/ HTTP/1.1" 404 -
+95.213.177.124 - - [13/Feb/2016 09:55:46] "POST http://check.proxyradar.com/azenv.php?auth=145532854657&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+95.213.177.124 - - [13/Feb/2016 14:32:27] "POST http://check.proxyradar.com/azenv.php?auth=145534514747&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+95.213.177.122 - - [13/Feb/2016 19:18:35] "POST http://check.proxyradar.com/azenv.php?auth=145536231537&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 217, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 340, in handle
+    self.handle_one_request()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 251, in handle_one_request
+    elif self.parse_request():
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 281, in parse_request
+    "Bad HTTP/0.9 request type (%r)" % command)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 364, in send_error
+    self.log_error("code %d, message %s", code, message)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 273, in log_error
+    self.log('error', *args)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 279, in log
+    _log(type, '%s - - [%s] %s\n' % (self.address_string(),
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 267, in address_string
+    return self.environ['REMOTE_ADDR']
+AttributeError: 'WSGIRequestHandler' object has no attribute 'environ'
+95.213.177.124 - - [14/Feb/2016 00:02:07] "POST http://check.proxyradar.com/azenv.php?auth=145537932793&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+1.64.194.243 - - [14/Feb/2016 00:17:37] "GET /raspbx-17-10-2015.zip HTTP/1.1" 404 -
+1.64.194.243 - - [14/Feb/2016 00:17:37] "GET /raspbx-17-10-2015.zip HTTP/1.1" 404 -
+1.64.194.243 - - [14/Feb/2016 00:17:37] "GET /raspbx-17-10-2015.zip HTTP/1.1" 404 -
+189.218.244.118 - - [14/Feb/2016 02:15:05] "GET /tmUnblock.cgi HTTP/1.1" 404 -
+189.218.244.118 - - [14/Feb/2016 02:15:06] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+95.213.177.123 - - [14/Feb/2016 04:38:54] "POST http://check.proxyradar.com/azenv.php?auth=145539593407&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+95.213.177.125 - - [14/Feb/2016 09:16:42] "POST http://check.proxyradar.com/azenv.php?auth=145541260207&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+95.213.177.123 - - [14/Feb/2016 14:01:04] "POST http://check.proxyradar.com/azenv.php?auth=145542966369&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+95.213.177.123 - - [14/Feb/2016 18:43:15] "POST http://check.proxyradar.com/azenv.php?auth=145544659577&a=PSCMN&i=917091597&p=80 HTTP/1.1" 404 -
+128.232.110.28 - - [14/Feb/2016 18:45:23] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 217, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 340, in handle
+    self.handle_one_request()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 251, in handle_one_request
+    elif self.parse_request():
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 286, in parse_request
+    self.send_error(400, "Bad request syntax (%r)" % requestline)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 364, in send_error
+    self.log_error("code %d, message %s", code, message)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 273, in log_error
+    self.log('error', *args)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 279, in log
+    _log(type, '%s - - [%s] %s\n' % (self.address_string(),
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 267, in address_string
+    return self.environ['REMOTE_ADDR']
+AttributeError: 'WSGIRequestHandler' object has no attribute 'environ'
+83.166.235.5 - - [14/Feb/2016 19:29:28] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+66.228.44.82 - - [14/Feb/2016 20:01:41] "GET / HTTP/1.0" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+95.213.177.125 - - [14/Feb/2016 23:19:15] "CONNECT check.proxyradar.com:80 HTTP/1.1" 404 -
+121.244.147.176 - - [14/Feb/2016 23:49:25] "GET /manager/html HTTP/1.1" 404 -
+141.212.122.112 - - [15/Feb/2016 00:16:02] "GET /x HTTP/1.1" 404 -
+83.166.235.5 - - [15/Feb/2016 00:40:39] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+91.196.50.33 - - [15/Feb/2016 01:45:57] "GET http://testp4.pospr.waw.pl/testproxy.php HTTP/1.1" 404 -
+95.213.177.124 - - [15/Feb/2016 03:55:45] "CONNECT check.proxyradar.com:80 HTTP/1.1" 404 -
+192.99.144.140 - - [15/Feb/2016 05:17:30] "PROPFIND /webdav/ HTTP/1.1" 404 -
+95.213.177.122 - - [15/Feb/2016 08:34:26] "CONNECT check.proxyradar.com:80 HTTP/1.1" 404 -
+94.185.83.100 - - [15/Feb/2016 11:11:30] "GET http://testp5.mielno.lubin.pl/testproxy.php HTTP/1.1" 404 -
+95.213.177.122 - - [15/Feb/2016 13:16:19] "CONNECT check.proxyradar.com:80 HTTP/1.1" 404 -
+83.166.235.5 - - [15/Feb/2016 15:21:32] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+95.213.177.124 - - [15/Feb/2016 17:55:21] "CONNECT check.proxyradar.com:80 HTTP/1.1" 404 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 217, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 340, in handle
+    self.handle_one_request()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 251, in handle_one_request
+    elif self.parse_request():
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 286, in parse_request
+    self.send_error(400, "Bad request syntax (%r)" % requestline)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 364, in send_error
+    self.log_error("code %d, message %s", code, message)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 273, in log_error
+    self.log('error', *args)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 279, in log
+    _log(type, '%s - - [%s] %s\n' % (self.address_string(),
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 267, in address_string
+    return self.environ['REMOTE_ADDR']
+AttributeError: 'WSGIRequestHandler' object has no attribute 'environ'
+95.213.177.125 - - [15/Feb/2016 22:39:30] "CONNECT check.proxyradar.com:80 HTTP/1.1" 404 -
+91.226.212.39 - - [16/Feb/2016 01:31:38] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+95.213.177.124 - - [16/Feb/2016 03:23:45] "CONNECT check.proxyradar.com:80 HTTP/1.1" 404 -
+95.213.177.124 - - [16/Feb/2016 08:11:47] "CONNECT check.proxyradar.com:80 HTTP/1.1" 404 -
+107.150.60.75 - - [16/Feb/2016 09:12:59] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+192.99.144.140 - - [16/Feb/2016 11:06:08] "PROPFIND /webdav/ HTTP/1.1" 404 -
+95.213.177.125 - - [16/Feb/2016 13:00:34] "CONNECT check.proxyradar.com:80 HTTP/1.1" 404 -
+141.212.122.193 - - [16/Feb/2016 16:02:39] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+95.213.177.125 - - [16/Feb/2016 17:46:53] "CONNECT check.proxyradar.com:80 HTTP/1.1" 404 -
+103.7.30.71 - - [16/Feb/2016 17:49:35] "POST /?signature=e24db32d324c84b470b4e0aa9069759b8d7efa47&timestamp=1455616175&nonce=834638921 HTTP/1.0" 200 -
+103.7.30.71 - - [16/Feb/2016 17:50:54] "POST /?signature=5150332f35b6056ff2ec2314f0c87ac45e09107a&timestamp=1455616254&nonce=313709274 HTTP/1.0" 200 -
+101.226.103.60 - - [16/Feb/2016 17:57:40] "POST / HTTP/1.1" 200 -
+101.226.103.63 - - [16/Feb/2016 17:58:12] "POST / HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 217, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 340, in handle
+    self.handle_one_request()
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 251, in handle_one_request
+    elif self.parse_request():
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 281, in parse_request
+    "Bad HTTP/0.9 request type (%r)" % command)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 364, in send_error
+    self.log_error("code %d, message %s", code, message)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 273, in log_error
+    self.log('error', *args)
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 279, in log
+    _log(type, '%s - - [%s] %s\n' % (self.address_string(),
+  File "/data/virtualbase/local/lib/python2.7/site-packages/werkzeug/serving.py", line 267, in address_string
+    return self.environ['REMOTE_ADDR']
+AttributeError: 'WSGIRequestHandler' object has no attribute 'environ'
+93.113.125.11 - - [16/Feb/2016 19:25:22] "GET / HTTP/1.0" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+54.229.197.186 - - [16/Feb/2016 20:58:53] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+95.213.177.124 - - [16/Feb/2016 22:33:39] "CONNECT check.proxyradar.com:80 HTTP/1.1" 404 -
+71.6.165.200 - - [17/Feb/2016 00:11:33] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+71.6.165.200 - - [17/Feb/2016 00:11:34] "GET /robots.txt HTTP/1.1" 404 -
+71.6.165.200 - - [17/Feb/2016 00:11:34] "GET /sitemap.xml HTTP/1.1" 404 -
+95.213.177.124 - - [17/Feb/2016 03:22:37] "CONNECT check.proxyradar.com:80 HTTP/1.1" 404 -
+107.150.60.76 - - [17/Feb/2016 04:50:27] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/virtualbase/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/raspbx/wxreplyer/run.py", line 27, in wxauth
+    map(sha1.update,list)
+NameError: global name 'sha1' is not defined
+95.213.177.125 - - [17/Feb/2016 08:06:51] "CONNECT check.proxyradar.com:80 HTTP/1.1" 404 -
+89.163.251.200 - - [17/Feb/2016 10:17:17] "GET /phpmyadmin/scripts/setup.php HTTP/1.0" 404 -
