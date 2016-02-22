@@ -29,6 +29,9 @@ Nginx with letsencrypt
 
 3.修改nginx配置，以申请证书时验证域名控制权
 
+	WEBROOT = /data/webroot
+	mkdir -p WEBROOT/.well-known/acme-challenge/
+
 4.获取证书
 
 	/usr/local/letsencrypt/letsencrypt-auto --config /data/gitbase/raspbx/letsencrypt/api.dbca.cn.conf certonly
