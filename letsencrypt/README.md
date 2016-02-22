@@ -1,7 +1,9 @@
 1.获取客户端
+
 	git clone https://github.com/letsencrypt/letsencrypt /usr/local/letsencrypt
 
 2.添加域名到配置文件
+
 	$ cat /data/gitbase/raspbx/letsencrypt/api.dbca.cn.conf
 	domains = api.dbca.cn
 	
