@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#pptpsetup --create sea --server 52.74.252.108 --username wanglin --password 'xxx' -encrypt
+
 route add 217.64.168.1 dev ppp0
 
 #ip rule add to 192.168.0.0/16 pref 10000 table 101   
